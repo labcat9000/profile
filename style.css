@@ -110,4 +110,8 @@ a:hover {
   .container {
     width: 300px;
   }
+  .list-inline > li {
+    display: block;
+    padding: 20px 20px;
+  }
 }
