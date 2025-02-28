@@ -1,0 +1,113 @@
+body {
+  color: #22223b;
+  font-family: 'Gowun Dodum';
+  text-align: center;
+  font-size: 16px;
+  line-height: 1;
+  /* css-pattern background */
+    --s: 29px; /* control the size*/
+    --c1: #000000;
+    --c2: #d2d3d5;
+    --c3: #494e69;
+
+    --g1: conic-gradient(at calc(250%/3) calc(50%/3),var(--c2) 60deg,#0000 0 300deg,var(--c1) 0);
+    --g2: conic-gradient(at calc(50%/3) 50%,#0000 75%,var(--c1) 0);
+    --g3: conic-gradient(at calc(100%/3) 50%,#0000 75%,var(--c2) 0);
+    --g4: conic-gradient(from 59deg at calc(200%/3) calc(249%/9),var(--c3) 61deg,#0000 62deg);
+    --g5: conic-gradient(from 60deg at 50% calc(250%/3),#f1f1f1 /*4th color*/ 60deg,var(--c1) 0 120deg,#0000 0);
+    --_p: calc(9*tan(30deg)*var(--s));
+    background:
+      var(--g1) calc(-1*var(--s)) 0,var(--g1) calc(2*var(--s)) var(--_p),
+      var(--g2),var(--g2) calc(3*var(--s)) var(--_p),
+      var(--g3),var(--g3) calc(3*var(--s)) var(--_p),
+      var(--g4),var(--g4) calc(3*var(--s)) var(--_p),
+      var(--g5) calc(3*var(--s)) 0,var(--g5) 0 var(--_p) var(--c3);
+    background-size: calc(6*var(--s)) calc(2*var(--_p))
+}
+
+h1 {
+  font-family: 'Red Hat Display';
+  color: #22223b;
+}
+
+h2, h3, h4 {
+  font-family: 'Gabarito';
+  color: #4a4e69;
+  line-height: 1;
+  font-size: 20px;
+}
+
+a {
+  color: #6d597a;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #b56576;
+}
+
+.btn-purple {
+  background-color: #6d597a;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  display: inline-block;
+  margin: 15px;
+}
+
+.btn-purple:hover {
+  color: white;
+  background-color: #b56576;
+  border-radius: 6px;
+  display: inline-block;
+  margin: 5px;
+}
+
+.list-inline > li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.list-inline {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.container {
+  width: 650px;
+  margin: 0 auto;
+}
+.card {
+  background-color: #f2e9e4;
+  border-radius: 20px;
+  border: 6px solid black;
+  padding: 20px 40px;
+  margin: 20px;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+}
